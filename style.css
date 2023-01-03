@@ -54,17 +54,17 @@ h2 {
 
 .box label:nth-child(1) i {
     background-image: url(./assets/1.jpeg);
-    animation: animate 0.3s steps(3) infinite;
+    animation: animate 0.3s linear infinite;
 } 
 
 .box label:nth-child(2) i {
     background-image: url(./assets/2.jpeg);
-    animation: animate 0.4s steps(3) infinite;
+    animation: animate 0.2s linear infinite;
 }
 
 .box label:nth-child(3) i {
     background-image: url(./assets/3.jpeg);
-    animation: animate 0.2s steps(3) infinite;
+    animation: animate 0.1s steps(3) infinite;
 }
 
 @keyframes animate {
