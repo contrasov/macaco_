@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Monte a imagem</h2>
+    <div class="box">
+      <label>
+        <input type="checkbox" class="checkbox" id="click1" />
+        <i></i>
+      </label>
+      <label>
+        <input type="checkbox" class="checkbox" id="click2" />
+        <i></i>
+      </label>
+      <label>
+        <input type="checkbox" class="checkbox" id="click3" />
+        <i></i>
+      </label>
+    </div>
+    <button class="reset">Reiniciar</button>
+    <script>
+        let click1 = document.querySelector('#click1');
+        let click2 = document.querySelector('#click2');
+        let click3 = document.querySelector('#click3');
+        let reset = document.querySelector('.reset');
+
+        click1.onclick = function(){
+            if (click1.checked == true){
+                click1.disabled = 'true';
+            }
+        }
+        click2.onclick = function(){
+            if (click2.checked == true){
+                click2.disabled = 'true';
+            }
+        }
+        click3.onclick = function(){
+            if (click3.checked == true){
+                click3.disabled = 'true';
+            }
+        }
+
+        reset.onclick = function(){
+            click1.disabled = false;
+            click1.checked = false;
+
+            click2.disabled = false;
+            click2.checked = false;
+
+            click3.disabled = false;
+            click3.checked = false;
+        }
+    </script>
+  </body>
+</html>
